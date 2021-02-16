@@ -49,18 +49,20 @@ header {
 #main {
   h1 {
   color: $blue;
-  margin: 0.4em 0 0.2rem;
+  margin: 0.8rem 0 0.2rem;
   font-size: 2.4rem;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.16rem;
+  word-spacing: 0.2rem;
   text-transform: uppercase;
   }
   p {
     color: $dark-text;
-    max-width: 30rem;
     font: 20px monospace;
+    margin: 1rem 0;
+    max-width: 36rem;
     img{
       float: left;
-      padding-right: 8px;
+      padding-right: 1rem;
     }
   }
 }
