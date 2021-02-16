@@ -14,8 +14,6 @@ body::before,
 body::after {
   box-sizing: border-box;
   margin: 0;
-  display: grid;
-  position: relative;
   overflow-wrap: break-word;
 }
 
@@ -26,21 +24,41 @@ body {
 }
 
 header {
-  border-bottom: grey 1px solid;
+  border-bottom: var(--grey) 1px solid;
+  min-height: 100px;
 }
 
-header h1 {
+#logo {
   color: var(--grey);
+  font-size: 1.6rem;
+  letter-spacing: -0.2rem;
+  transform: scaleY(1.5);
+  border: 1px solid var(--grey);
+  display: inline-block;
+  padding: 0 1rem;
+  border-top: none;
+  margin: -3px auto 0;
+  position: relative;
+  left: 100px;
 }
 
-header h1 strong {
+#logo strong {
   color: var(--green);
 }
 
 #main h1 {
   color: var(--blue);
+  margin: 0.4em 0 0.2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 #main p {
   color: var(--dark-text);
+  font: 16px monospace;
+}
+
+#main p img{
+  float: left;
+  padding-right: 8px;
 }
