@@ -21,6 +21,11 @@ body {
   background: $light;
 }
 
+#root{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 header {
   //border-bottom: $grey 1px solid;
   min-height: 50px;
@@ -43,13 +48,15 @@ header {
 
 #main {
   h1 {
-  color: $blue;
+  color: $pink;
   margin: 0.4em 0 0.2rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.08em;
   text-transform: uppercase;
   }
   p {
     color: $dark-text;
+    max-width: 30rem;
     font: 20px monospace;
     img{
       float: left;
